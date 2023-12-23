@@ -1,5 +1,3 @@
-using k8s.KubeConfigModels;
-
 var builder = DistributedApplication.CreateBuilder(args);
 
 var tempo = builder.AddContainer("tempo", "grafana/tempo", "2.3.1")
