@@ -27,3 +27,6 @@ service:
     traces:
       receivers: [otlp]
       exporters: [otlp, otlp/dashboard]
+    metrics:
+      receivers: [otlp]
+      exporters: [otlp/dashboard]
